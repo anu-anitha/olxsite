@@ -1,0 +1,11 @@
+{% load static %}
+<form action="" method="POST"> 
+	{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" name="signup">
+</form>
+<div class="mt-4">
+					<div class="d-flex justify-content-center links">
+						Already have an account? <a href="{% url 'login' %}" class="ml-2">Login</a>
+					</div>
+					</div>
